@@ -1,0 +1,16 @@
+.section__profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* not used in Profile
+.img--profile {
+  width: 200px;
+}
+*/
+
+figcaption {
+  padding: 2rem 0;
+  font-weight: bold;
+}
