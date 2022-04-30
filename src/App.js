@@ -1,12 +1,15 @@
 import './App.css';
 import { Profile } from './Components/Profile';
+import { MainHeader } from './Components/MainHeader';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Quizz App React</h1>
-      <Profile />
-    </div>
+    <body className="App">
+      <MainHeader />
+      <main>
+        <Profile />
+      </main>
+    </body>
   );
 }
 
