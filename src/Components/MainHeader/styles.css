@@ -1,0 +1,17 @@
+h1 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+}
+
+.main--header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 100%;
+  background-color: antiquewhite;
+  padding: 3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
