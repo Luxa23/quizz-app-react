@@ -11,7 +11,7 @@ function App() {
       <main>
         <>
           {items.map(item => {
-            return <Card user={item} />;
+            return <Card question={item} />;
           })}
         </>
         <Profile />
