@@ -1,9 +1,11 @@
 import './styles.css';
 import { Button } from '../Button/index';
+import { Bookmark } from '../Bookmark';
 
 export function Card({ user }) {
   return (
     <section class="card">
+      <Bookmark />
       <h2>{user.title}</h2>
       <p>{user.question}</p>
       <Button />
