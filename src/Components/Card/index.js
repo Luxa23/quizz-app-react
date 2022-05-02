@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
-import './styles.css';
 import { Button } from '../Button/index';
 import { Bookmark } from '../Bookmark';
+import StyledSection from '../Card/StyledSection';
+import StyledWrapper from '../Wrapper/StyledWrapper';
 
 export function Card({ question }) {
   const [bookmarked, setBookmarked] = useState(false);
   const [showAnswer, setShowAnswer] = useState(false);
   return (
-    <section className="card">
+    <StyledSection>
       <Bookmark
         checked={bookmarked}
         onToggle={() => setBookmarked(!bookmarked)}
@@ -22,11 +23,11 @@ export function Card({ question }) {
         {showAnswer ? 'Hide' : 'Show'} Answer
       </Button>
 
-      <ul>
+      <StyledWrapper>
         {question.tags.map(tag => {
           return <li>{tag}</li>;
         })}
-      </ul>
-    </section>
+      </StyledWrapper>
+    </StyledSection>
   );
 }
