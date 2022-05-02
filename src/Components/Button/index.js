@@ -1,5 +1,9 @@
 import './styles.css';
 
-export function Button() {
-  return <button>Show / Hide answer</button>;
+export function Button({ children, onClick }) {
+  return (
+    <button type="button" onClick={onClick}>
+      {children}
+    </button>
+  );
 }

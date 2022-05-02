@@ -1,11 +1,11 @@
 import './styles.css';
 
-export function Bookmark() {
+export function Bookmark({ checked, onToggle }) {
   return (
     <svg
-      data-js="svg--bookmark"
-      style={{ width: '50px', height: '50px' }}
+      className={checked ? 'bookmark bookmark--active' : 'bookmark'}
       viewBox="0 0 24 24"
+      onClick={onToggle}
     >
       <path
         fill="currentColor"

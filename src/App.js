@@ -6,17 +6,17 @@ import { Card } from './Components/Card';
 
 function App() {
   return (
-    <body className="App">
+    <>
       <MainHeader />
       <main>
         <>
           {items.map(item => {
-            return <Card user={item} />;
+            return <Card question={item} />;
           })}
         </>
         <Profile />
       </main>
-    </body>
+    </>
   );
 }
 
