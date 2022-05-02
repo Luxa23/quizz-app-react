@@ -4,7 +4,7 @@ import './styles.css';
 export function Profile() {
   return (
     <section>
-      <div class="section__profile">
+      <div className="section__profile">
         {/**   <img
          class="img--profile"
           src="./images/profile-image.jpg"

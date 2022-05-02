@@ -6,7 +6,7 @@ import { Card } from './Components/Card';
 
 function App() {
   return (
-    <body className="App">
+    <>
       <MainHeader />
       <main>
         <>
@@ -16,7 +16,7 @@ function App() {
         </>
         <Profile />
       </main>
-    </body>
+    </>
   );
 }
 
