@@ -5,6 +5,7 @@ const StyledWrapper = styled.ul`
   flex-direction: row;
   justify-content: center;
   column-gap: 1rem;
+  padding: 0;
 
   & > li {
     list-style-type: none;
